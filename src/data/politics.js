@@ -1,0 +1,156 @@
+export default {
+  id: 'politics',
+  name: 'Politics',
+  tagline: 'Who decides — and how',
+  colors: ['#ef4444', '#3b82f6'],
+  shape: { type: 'spiral', arms: 2, twist: 5 },
+  intro: 'Power, voting, money and information. These planets reveal how the rules that run your life actually get made.',
+  teaser: 'About 71% of the world’s population lived under autocracy in 2023, according to V-Dem.',
+  planets: [
+    {
+      id: 'democracy',
+      name: 'Democracy',
+      subtitle: 'A recent, fragile idea',
+      look: { type: 'terran', colors: ['#1e3a8a', '#60a5fa', '#eff6ff'], rings: false },
+      size: 1.6,
+      summary: 'Democracy feels permanent, but it is historically young — and in many places it is shrinking.',
+      insights: [
+        {
+          stat: '71%',
+          headline: 'Of people live in autocracies',
+          detail: 'The V-Dem Institute’s 2024 report found about 71% of the world’s population — 5.7 billion people — lived in autocracies in 2023, up from 48% a decade earlier.',
+          source: { name: 'V-Dem Democracy Report 2024', url: 'https://www.v-dem.net/publications/democracy-reports/' },
+        },
+        {
+          stat: '1971',
+          headline: 'When Swiss women could vote nationally',
+          detail: 'Switzerland — often held up as a model democracy — only gave women the federal vote in 1971. One canton, Appenzell Innerrhoden, held out until a court forced it in 1990.',
+          source: { name: 'Wikipedia: Women’s suffrage in Switzerland', url: 'https://en.wikipedia.org/wiki/Women%27s_suffrage_in_Switzerland' },
+        },
+      ],
+      links: [
+        { title: 'V-Dem Institute', url: 'https://www.v-dem.net/', desc: 'Measures democracy in every country' },
+        { title: 'Our World in Data: Democracy', url: 'https://ourworldindata.org/democracy', desc: '200 years of charts' },
+        { title: 'Freedom House', url: 'https://freedomhouse.org/', desc: 'Country-by-country freedom scores' },
+      ],
+    },
+    {
+      id: 'elections',
+      name: 'Elections',
+      subtitle: 'Humanity at the ballot box',
+      look: { type: 'gas', colors: ['#7f1d1d', '#f87171', '#fff1f2'], rings: true },
+      size: 1.5,
+      summary: 'Elections are the largest organised human events on Earth.',
+      insights: [
+        {
+          stat: '642M',
+          headline: 'Votes in one election',
+          detail: 'India’s 2024 general election saw about 642 million people vote — the largest election in human history.',
+          source: { name: 'Wikipedia: 2024 Indian general election', url: 'https://en.wikipedia.org/wiki/2024_Indian_general_election' },
+        },
+        {
+          stat: '1',
+          headline: 'Voter — one whole polling booth',
+          detail: 'Indian election rules aim for no voter to travel more than 2 km. For years a polling station was set up in the Gir forest for a single voter: a priest named Mahant Bharatdas.',
+          source: { name: 'Wikipedia: Election Commission of India', url: 'https://en.wikipedia.org/wiki/Election_Commission_of_India' },
+        },
+        {
+          stat: '~50%',
+          headline: 'Of humanity voted in 2024',
+          detail: '2024 was the biggest election year ever: countries home to roughly half the world’s population held national elections.',
+          source: { name: 'Wikipedia: List of elections in 2024', url: 'https://en.wikipedia.org/wiki/List_of_elections_in_2024' },
+        },
+      ],
+      links: [
+        { title: 'IDEA: Voter turnout database', url: 'https://www.idea.int/data-tools/data/voter-turnout-database', desc: 'Turnout for every country' },
+        { title: 'Electoral systems explained', url: 'https://en.wikipedia.org/wiki/Electoral_system', desc: 'Why the rules decide the winner' },
+      ],
+    },
+    {
+      id: 'money',
+      name: 'Money & Lobbying',
+      subtitle: 'The price of influence',
+      look: { type: 'desert', colors: ['#14532d', '#65a30d', '#ecfccb'], rings: false },
+      size: 1.3,
+      summary: 'Influence is bought openly and legally — at a scale few voters picture.',
+      insights: [
+        {
+          stat: '$4.4B',
+          headline: 'Spent lobbying Washington in a year',
+          detail: 'Organisations reported about $4.4 billion of federal lobbying in the US in 2024 — about $8 million for every member of Congress.',
+          source: { name: 'OpenSecrets: Lobbying', url: 'https://www.opensecrets.org/federal-lobbying' },
+        },
+        {
+          stat: '$15.9B',
+          headline: 'Cost of the 2024 US elections',
+          detail: 'OpenSecrets estimated the 2024 federal election cycle cost around $15.9 billion — among the most expensive elections ever held anywhere.',
+          source: { name: 'OpenSecrets', url: 'https://www.opensecrets.org/elections-overview/cost-of-election' },
+        },
+      ],
+      links: [
+        { title: 'OpenSecrets', url: 'https://www.opensecrets.org/', desc: 'Follow the money in US politics' },
+        { title: 'Transparency International', url: 'https://www.transparency.org/', desc: 'Global corruption index' },
+      ],
+    },
+    {
+      id: 'misinformation',
+      name: 'Misinformation',
+      subtitle: 'Lies travel faster',
+      look: { type: 'lava', colors: ['#18181b', '#a21caf', '#f5d0fe'], rings: false },
+      size: 1.25,
+      summary: 'Social networks reward what is surprising and emotional — and falsehoods are often both.',
+      insights: [
+        {
+          stat: '6×',
+          headline: 'Faster: how false news spreads',
+          detail: 'An MIT study of 126,000 stories on Twitter found falsehoods were 70% more likely to be retweeted than truth, and reached 1,500 people about six times faster.',
+          source: { name: 'Vosoughi, Roy & Aral, Science (2018)', url: 'https://www.science.org/doi/10.1126/science.aap9559' },
+        },
+        {
+          stat: '8.7M',
+          headline: 'Engagements for fake stories vs 7.4M for real',
+          detail: 'In the final months of the 2016 US campaign, the top 20 fake election stories on Facebook drew more engagement (8.7M) than the top 20 stories from major news outlets (7.4M).',
+          source: { name: 'BuzzFeed News analysis', url: 'https://www.buzzfeednews.com/article/craigsilverman/viral-fake-election-news-outperformed-real-news-on-facebook' },
+        },
+      ],
+      links: [
+        { title: 'The MIT study', url: 'https://www.science.org/doi/10.1126/science.aap9559', desc: 'The spread of true and false news online' },
+        { title: 'Bad News game', url: 'https://www.getbadnews.com/', desc: 'Learn manipulation tactics by playing — it inoculates you' },
+        { title: 'Snopes', url: 'https://www.snopes.com/', desc: 'Fact-checking' },
+      ],
+    },
+    {
+      id: 'power',
+      name: 'War & Power',
+      subtitle: 'Geopolitics',
+      look: { type: 'ice', colors: ['#0f172a', '#94a3b8', '#f1f5f9'], rings: true },
+      size: 1.4,
+      summary: 'Military power still shapes the world map — and spending is rising fast.',
+      insights: [
+        {
+          stat: '$2.7T',
+          headline: 'Global military spending in a year',
+          detail: 'SIPRI calculated world military spending at about $2.7 trillion in 2024 — the steepest year-on-year rise since at least the end of the Cold War.',
+          source: { name: 'SIPRI', url: 'https://www.sipri.org/research/armament-and-disarmament/arms-and-military-expenditure/military-expenditure' },
+        },
+        {
+          stat: '~12,000',
+          headline: 'Nuclear warheads still exist',
+          detail: 'Nine countries hold roughly 12,000 nuclear warheads — thousands on high alert, ready within minutes.',
+          source: { name: 'SIPRI Yearbook', url: 'https://www.sipri.org/yearbook' },
+        },
+        {
+          stat: '38 min',
+          headline: 'The shortest war in history',
+          detail: 'The Anglo-Zanzibar War of 1896 lasted roughly 38 to 45 minutes before Zanzibar surrendered.',
+          source: { name: 'Wikipedia: Anglo-Zanzibar War', url: 'https://en.wikipedia.org/wiki/Anglo-Zanzibar_War' },
+        },
+      ],
+      links: [
+        { title: 'SIPRI', url: 'https://www.sipri.org/', desc: 'Arms, conflict and military data' },
+        { title: 'Bulletin of the Atomic Scientists', url: 'https://thebulletin.org/doomsday-clock/', desc: 'The Doomsday Clock' },
+        { title: 'Council on Foreign Relations', url: 'https://www.cfr.org/global-conflict-tracker', desc: 'Global Conflict Tracker' },
+      ],
+    },
+  ],
+};

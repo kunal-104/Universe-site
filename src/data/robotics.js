@@ -1,0 +1,167 @@
+export default {
+  id: 'robotics',
+  name: 'Robotics',
+  tagline: 'AI with a body',
+  colors: ['#f97316', '#e5e7eb'],
+  shape: { type: 'ring', arms: 2, twist: 2 },
+  intro: 'Robots already build our cars, drive our streets, operate on our bodies and explore other planets. Zoom in.',
+  teaser: 'Over 4 million industrial robots are already working in factories worldwide.',
+  planets: [
+    {
+      id: 'factory',
+      name: 'Factory Robots',
+      subtitle: 'The quiet workforce',
+      look: { type: 'desert', colors: ['#431407', '#fb923c', '#fff7ed'], rings: false },
+      size: 1.6,
+      summary: 'Industrial robot arms weld, paint and assemble — tirelessly, around the clock.',
+      insights: [
+        {
+          stat: '4.28M',
+          headline: 'Industrial robots at work',
+          detail: 'The International Federation of Robotics counted about 4.28 million industrial robots operating in factories worldwide in 2023 — a record.',
+          source: { name: 'IFR World Robotics', url: 'https://ifr.org/worldrobotics/' },
+        },
+        {
+          stat: '1,012',
+          headline: 'Robots per 10,000 workers in South Korea',
+          detail: 'South Korea has the world’s highest robot density: about 1 robot for every 10 manufacturing workers — roughly seven times the global average.',
+          source: { name: 'IFR press release', url: 'https://ifr.org/news/global-robot-density-in-factories-doubled-in-seven-years' },
+        },
+        {
+          stat: '51%',
+          headline: 'Of new robots go to China',
+          detail: 'China alone installed about half of all new industrial robots worldwide in 2023 — more than every other country combined.',
+          source: { name: 'IFR World Robotics', url: 'https://ifr.org/worldrobotics/' },
+        },
+      ],
+      links: [
+        { title: 'IFR World Robotics', url: 'https://ifr.org/worldrobotics/', desc: 'The global robot census' },
+        { title: 'Industrial robot (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Industrial_robot', desc: 'How they work and where' },
+      ],
+    },
+    {
+      id: 'humanoids',
+      name: 'Humanoids',
+      subtitle: 'Robots shaped like us',
+      look: { type: 'ice', colors: ['#27272a', '#d4d4d8', '#fafafa'], rings: true },
+      size: 1.4,
+      summary: 'Humanoid robots are designed to work in a world built for human bodies — stairs, doors, tools.',
+      insights: [
+        {
+          stat: '1920',
+          headline: 'The word “robot” means forced labour',
+          detail: '“Robot” comes from the Czech “robota” (forced labour), introduced in Karel Čapek’s 1920 play R.U.R. — a story in which the robots rebel.',
+          source: { name: 'Wikipedia: R.U.R.', url: 'https://en.wikipedia.org/wiki/R.U.R.' },
+        },
+        {
+          stat: 'Paradox',
+          headline: 'Chess is easy. Folding laundry is hard.',
+          detail: '“Moravec’s paradox”: what’s hard for humans (chess, calculus) is easy for machines, while what a toddler does effortlessly (walking, grasping a sock) is enormously hard for robots.',
+          source: { name: 'Wikipedia: Moravec’s paradox', url: 'https://en.wikipedia.org/wiki/Moravec%27s_paradox' },
+        },
+        {
+          stat: '$5T',
+          headline: 'Projected humanoid market by 2050',
+          detail: 'Morgan Stanley projected in 2025 that the humanoid robot market could reach about $5 trillion by 2050, with around a billion units in use.',
+          source: { name: 'Morgan Stanley', url: 'https://www.morganstanley.com/insights/articles/humanoid-robot-market-5-trillion-by-2050' },
+        },
+      ],
+      links: [
+        { title: 'IEEE Robots Guide', url: 'https://robotsguide.com/', desc: 'Encyclopedia of real robots' },
+        { title: 'Boston Dynamics', url: 'https://bostondynamics.com/', desc: 'Atlas, Spot and the famous videos' },
+        { title: 'Moravec’s paradox', url: 'https://en.wikipedia.org/wiki/Moravec%27s_paradox', desc: 'Why easy things are hard' },
+      ],
+    },
+    {
+      id: 'self-driving',
+      name: 'Self-Driving Cars',
+      subtitle: 'Robots on the road',
+      look: { type: 'terran', colors: ['#1f2937', '#f97316', '#fde68a'], rings: false },
+      size: 1.5,
+      summary: 'Driverless taxis already operate in several cities. The question is no longer “if”, but how safe and how fast.',
+      insights: [
+        {
+          stat: '1.19M',
+          headline: 'People killed on roads each year',
+          detail: 'The WHO estimates about 1.19 million people die in road crashes every year — mostly from human error. That is the bar robot drivers have to beat.',
+          source: { name: 'WHO: Road traffic injuries', url: 'https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries' },
+        },
+        {
+          stat: '88%',
+          headline: 'Fewer property-damage claims',
+          detail: 'A Swiss Re study of over 25 million driverless Waymo miles found about 88% fewer property-damage claims and 92% fewer bodily-injury claims than human drivers.',
+          source: { name: 'Waymo Safety Impact', url: 'https://waymo.com/safety/impact/' },
+        },
+        {
+          stat: '250K+',
+          headline: 'Paid robotaxi rides per week',
+          detail: 'By spring 2025 Waymo was giving over 250,000 paid, fully driverless rides every week in US cities.',
+          source: { name: 'Wikipedia: Waymo', url: 'https://en.wikipedia.org/wiki/Waymo' },
+        },
+      ],
+      links: [
+        { title: 'Waymo Safety Hub', url: 'https://waymo.com/safety/', desc: 'Crash data, published openly' },
+        { title: 'SAE levels of driving automation', url: 'https://www.sae.org/blog/sae-j3016-update', desc: 'Level 0 to Level 5 explained' },
+        { title: 'WHO road safety', url: 'https://www.who.int/health-topics/road-safety', desc: 'Global statistics' },
+      ],
+    },
+    {
+      id: 'surgical',
+      name: 'Surgical Robots',
+      subtitle: 'Steadier than any hand',
+      look: { type: 'ocean', colors: ['#0c0a09', '#f43f5e', '#ffe4e6'], rings: false },
+      size: 1.15,
+      summary: 'Surgeons use robotic arms for precise, minimally invasive operations — and robots are starting to operate on their own.',
+      insights: [
+        {
+          stat: '2001',
+          headline: 'Surgery across the Atlantic',
+          detail: 'In the “Lindbergh Operation”, surgeons in New York removed the gallbladder of a patient in Strasbourg, France — about 6,000 km away — using a robot.',
+          source: { name: 'Wikipedia: Lindbergh operation', url: 'https://en.wikipedia.org/wiki/Lindbergh_operation' },
+        },
+        {
+          stat: '10M+',
+          headline: 'Operations with da Vinci robots',
+          detail: 'Intuitive’s da Vinci systems have been used in well over 10 million procedures worldwide.',
+          source: { name: 'Intuitive', url: 'https://www.intuitive.com/' },
+        },
+        {
+          stat: '2022',
+          headline: 'A robot operated with no human hand',
+          detail: 'Johns Hopkins’ STAR robot performed laparoscopic surgery on pig soft tissue autonomously — and its stitching was more consistent than expert surgeons’.',
+          source: { name: 'Johns Hopkins University', url: 'https://hub.jhu.edu/2022/01/26/star-robot-performs-intestinal-surgery/' },
+        },
+      ],
+      links: [
+        { title: 'Robot-assisted surgery', url: 'https://en.wikipedia.org/wiki/Robot-assisted_surgery', desc: 'Overview and history' },
+        { title: 'STAR autonomous surgery', url: 'https://hub.jhu.edu/2022/01/26/star-robot-performs-intestinal-surgery/', desc: 'The landmark study' },
+      ],
+    },
+    {
+      id: 'space-robots',
+      name: 'Space Explorers',
+      subtitle: 'Robots on other worlds',
+      look: { type: 'desert', colors: ['#450a0a', '#dc2626', '#fecaca'], rings: false },
+      size: 1.3,
+      summary: 'Every surface photo you have seen of Mars was taken by a robot. Distance forces them to think for themselves.',
+      insights: [
+        {
+          stat: '5 → 72',
+          headline: 'Flights planned vs. flown',
+          detail: 'NASA’s Ingenuity helicopter was designed for 5 test flights on Mars. It flew 72 — the first powered flight on another planet.',
+          source: { name: 'NASA: Ingenuity', url: 'https://science.nasa.gov/mission/mars-2020-perseverance/ingenuity-mars-helicopter/' },
+        },
+        {
+          stat: '22 min',
+          headline: 'Delay for a “hello” to Mars',
+          detail: 'Radio signals take between about 3 and 22 minutes to reach Mars. Rovers can’t be joysticked — they must drive themselves.',
+          source: { name: 'NASA Mars Exploration', url: 'https://science.nasa.gov/mars/' },
+        },
+      ],
+      links: [
+        { title: 'NASA Mars', url: 'https://science.nasa.gov/mars/', desc: 'Rovers, raw images, missions' },
+        { title: 'Perseverance raw images', url: 'https://mars.nasa.gov/mars2020/multimedia/raw-images/', desc: 'Fresh photos from Mars' },
+      ],
+    },
+  ],
+};

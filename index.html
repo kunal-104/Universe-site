@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Universe of Knowledge</title>
+    <meta name="description" content="A zoomable 3D universe of human knowledge. Every galaxy is a field, every planet a subject, every moon a fact that will shock you." />
+    <meta name="theme-color" content="#04030b" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body data-depth="universe">
+    <div id="stage"></div>
+    <div id="labels"></div>
+    <div id="vignette"></div>
+    <div id="flash"></div>
+
+    <header id="topbar">
+      <div class="brand"><span class="logo"></span><span>Universe<em>of Knowledge</em></span></div>
+      <nav id="breadcrumb" aria-label="Location"></nav>
+      <button id="search-btn" class="glass-btn" aria-label="Search"><span>Search the universe</span><kbd>/</kbd></button>
+    </header>
+
+    <aside id="panel" class="glass">
+      <button id="panel-toggle" aria-label="Toggle panel"><span></span></button>
+      <div id="panel-body"></div>
+    </aside>
+
+    <div id="depth" aria-label="Zoom depth"></div>
+
+    <div id="zoom-ctrls">
+      <button id="zoom-in" class="glass-btn round" aria-label="Zoom in">+</button>
+      <button id="zoom-out" class="glass-btn round" aria-label="Zoom out">−</button>
+    </div>
+
+    <div id="ticker" class="glass"></div>
+    <div id="hint"></div>
+    <div id="tooltip" class="glass"></div>
+    <div id="pressure">
+      <svg viewBox="0 0 80 80"><circle class="bg" cx="40" cy="40" r="36" /><circle class="fg" cx="40" cy="40" r="36" /></svg>
+      <div class="pt"></div>
+    </div>
+
+    <div id="search">
+      <div class="search-box glass">
+        <input id="search-input" placeholder="Search galaxies, planets, shocking facts…" autocomplete="off" spellcheck="false" />
+        <ul id="search-results"></ul>
+      </div>
+    </div>
+
+    <div id="intro">
+      <div class="intro-inner">
+        <div class="intro-kicker">A zoomable map of human knowledge</div>
+        <h1 class="intro-title"><span>U</span><span>N</span><span>I</span><span>V</span><span>E</span><span>R</span><span>S</span><span>E</span></h1>
+        <p class="intro-sub">Every galaxy is a field. Every planet is a subject. Every moon is a fact that will change how you see the world.</p>
+        <button id="enter-btn">Enter the Universe</button>
+        <div class="intro-help">
+          <span><b>Drag</b> to orbit</span><span><b>Scroll</b> to fly in &amp; out</span><span><b>Click</b> to dive</span><span><b>/</b> to search</span>
+        </div>
+      </div>
+      <div class="intro-loading">Charting galaxies…</div>
+    </div>
+
+    <noscript>This experience needs JavaScript and WebGL.</noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
